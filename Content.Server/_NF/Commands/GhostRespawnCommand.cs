@@ -1,17 +1,16 @@
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
-using Content.Shared.Administration;
-using Content.Shared.CCVar;
 using Content.Shared.NF14.CCVar;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
 using Robust.Shared.Timing;
+using Robust.Shared.Toolshed;
 
 namespace Content.Server.NF14.Commands;
 
-[AnyCommand()]
-public sealed class GhostRespawnCommand : IConsoleCommand
+[ToolshedCommand]
+public sealed class GhostRespawnCommand : ToolshedCommand
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
