@@ -90,4 +90,10 @@
       - PosterContrabandEnlistGorlexDD
       - PosterContrabandInterdyneDD
       - PosterContrabandWaffleCorpDD
+      - NFPosterContrabandLvhiStationDD
+      - NFPosterContrabandLvhiShuttleDD
+      - NFPosterContrabandLvhiSpaceDD
+      - NFPosterContrabandFsbStasisDD
+      - NFPosterContrabandFsbApothecaryDD
+      - NFPosterContrabandFsbLogoDD
     chance: 1
