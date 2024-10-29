@@ -13,5 +13,14 @@ reagent-desc-pineapple-blast = For when the trees start talking. Smells tropical
 reagent-name-torpedo-juice = torpedo juice
 reagent-desc-torpedo-juice = The joys of drinking and unrestricted submarine warfare combined! Has a strong alcoholic smell.
 
-reagent-name-bees-knees = bee’s knees
+reagent-name-bees-knees = bee's knees
 reagent-desc-bees-knees = BEEEEEEEEEEEEEEES!!! Has a stingy smell.
+
+reagent-name-cucumber-water = cucumber water
+reagent-desc-cucumber-water = The fanciest of waters.
+
+reagent-name-honey = honey
+reagent-desc-honey = Thick, golden and sticky, the original sweetener.
+
+reagent-name-honey-iced-tea = honey iced tea
+reagent-desc-honey-iced-tea = Tea with a splash of honey.

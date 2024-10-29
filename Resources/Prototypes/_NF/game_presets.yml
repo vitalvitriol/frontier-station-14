@@ -9,4 +9,5 @@
     - Adventure
     - BasicStationEventScheduler
     - BluespaceEventScheduler
-    - BasicRoundstartVariation
+    - SmugglingEventScheduler
+    - FrontierRoundstartVariation

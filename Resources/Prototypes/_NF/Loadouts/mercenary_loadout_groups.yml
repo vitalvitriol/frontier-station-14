@@ -50,6 +50,8 @@
   subgroups:
   - PilotOuterClothing
   - ContractorOuterClothing
+  fallbacks:
+  - ContractorClothingOuterVestTank # Vox-only, default them to have this equipped
 
 - type: loadoutGroup
   id: MercenaryShoes
@@ -85,7 +87,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - MercenaryClothingHeadsetAltMercenary
+  - MercenaryClothingHeadsetAltMercenaryCommon
   - MercenaryClothingHeadsetSecurityCommon
   - MercenaryClothingHeadsetBrigmedicCommon
   - MercenaryClothingHeadsetAltSecurityCommon

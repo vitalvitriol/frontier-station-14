@@ -5,13 +5,13 @@
   - BaseStationCargo
   - BaseStationJobsSpawning
   - BaseStationRecords
-  - BaseStationShuttles
   - BaseStationAlertLevels
   - BaseStationSiliconLawFrontierStation
   - BaseStationSectorNews
   - BaseStationMail # Mail
   - BaseStationSectorServices # Hosts all sector-wide services
   - BaseStationDampening
+  - BaseStationDeadDropHintExempt # No hints
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
@@ -29,24 +29,32 @@
   - type: Transform
 
 - type: entity
+  id: DeadDropFrontierOutpost
+  parent:
+  - StandardFrontierOutpost
+  - BaseStationDeadDrops
+  categories: [ HideSpawnMenu ]
+
+- type: entity
   id: MarketFrontierOutpost
   parent:
   - StandardFrontierOutpost
   - BaseStationCargoMarket
   categories: [ HideSpawnMenu ]
 
+  # Station with records, for shuttle purchases and/or player spawning
 - type: entity
-  id: SpawnableFrontierOutpost
+  id: RecordsFrontierOutpost
   parent:
   - StandardFrontierOutpost
   - BaseStationRecords
   categories: [ HideSpawnMenu ]
 
 - type: entity
-  id: ShipyardFrontierOutpost
+  id: DeadDropRecordsFrontierOutpost
   parent:
   - StandardFrontierOutpost
-  - BaseStationShuttles
+  - BaseStationDeadDrops
   categories: [ HideSpawnMenu ]
 
 - type: entity
@@ -56,7 +64,6 @@
   - BaseStationCargo # Cargo
   - BaseStationJobsSpawning # Records and jobsspawning
   - BaseStationRecords
-  - BaseStationShuttles # Can spawn shuttles via shipyard consoles
   - BaseStationAlertLevels # Has a comms console
   - BaseStationSiliconLawFrontierStation # No funny borg laws
   - BaseStationDampening
@@ -75,10 +82,12 @@
   - BaseStationRenameFaxes
   - BaseStationRenameWarpPoints
   - BaseStationSiliconLawFrontierShips
+  - BaseStationDeadDropHintExempt # No hints on ship generation
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
 
+  # FIXME: this is currently identical to StandardFrontierVessel
 - type: entity
   id: StandardFrontierSecurityVessel
   parent:
@@ -90,6 +99,7 @@
   - BaseStationRenameFaxes
   - BaseStationRenameWarpPoints
   - BaseStationSiliconLawFrontierShips
+  - BaseStationDeadDropHintExempt # No hints on ship generation
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
@@ -97,18 +107,9 @@
 - type: entity
   id: StandardFrontierSecurityExpeditionVessel
   parent:
-  - BaseStation
-  - BaseStationJobsSpawning
-  - BaseStationRecords
-  - BaseStationAlertLevels
-  - BaseStationAllEventsEligible
-  - BaseStationRenameFaxes
-  - BaseStationRenameWarpPoints
-  - BaseStationSiliconLawFrontierShips
+  - StandardFrontierSecurityVessel
   - BaseStationExpeditions
   categories: [ HideSpawnMenu ]
-  components:
-  - type: Transform
 
 - type: entity
   id: StandardFrontierExpeditionVessel
@@ -116,5 +117,3 @@
   - StandardFrontierVessel
   - BaseStationExpeditions
   categories: [ HideSpawnMenu ]
-  components:
-  - type: Transform

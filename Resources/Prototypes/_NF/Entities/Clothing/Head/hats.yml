@@ -1,11 +1,17 @@
 - type: entity
-  parent: ClothingHeadHatHoshat
   id: ClothingHeadHatBH
   name: "bounty hunter's hat"
+  parent: [ BaseC1Contraband, ClothingHeadHatHoshat ]
   description: "There's a new bounty hunter in the sector."
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/bounty_hunter_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/bounty_hunter_hat.rsi
+  - type: HamsterWearable
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatPilgrim
   name: pilgrim's hat
   description: "Thou shalt not suffer a turkey to live."
@@ -16,7 +22,7 @@
     sprite: _NF/Clothing/Head/Hats/pilgrim_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatWideBrimmed
   name: wide-brimmed hat
   description: Works great as frisbee substitute.
@@ -27,7 +33,7 @@
     sprite: _NF/Clothing/Head/Hats/widebrim_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatCardinal
   name: cardinal's hat
   description: Keeps your head well protected from sun and reason.
@@ -38,7 +44,7 @@
     sprite: _NF/Clothing/Head/Hats/cardinal_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatWitchhunter
   name: witch hunter's hat
   description: "Thou shalt not suffer a witch to live."
@@ -49,7 +55,7 @@
     sprite: _NF/Clothing/Head/Hats/witch_hunter_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatBishopMitre
   name: bishop's mitre
   description: How to wear this thing? Ah! The other way around!
@@ -60,7 +66,7 @@
     sprite: _NF/Clothing/Head/Hats/bishop_mitre.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatKippah
   name: kippah
   description: Worn on the head like a dome.
@@ -71,7 +77,7 @@
     sprite: _NF/Clothing/Head/Hats/kippah.rsi
 
 - type: entity
-  parent: ClothingHeadBaseButcherable
+  parent: [ ChaplainClothes, ClothingHeadBaseButcherable ]
   id: ClothingHeadHatHoodCardinalHood
   categories: [ HideSpawnMenu ]
   name: cardinal's hood

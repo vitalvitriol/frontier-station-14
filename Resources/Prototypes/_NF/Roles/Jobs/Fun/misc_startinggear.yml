@@ -1,3 +1,19 @@
+# Aghost
+- type: startingGear
+  id: NFMobAghostGear
+  equipment:
+    back: ClothingBackpackSatchelHolding
+    id: NFAdminPDA
+  storage:
+    back:
+    - GasAnalyzer
+    - trayScanner
+    - AccessConfiguratorUniversal
+    - Multitool
+    - PowerDrill
+    - JawsOfLife
+    - WelderIndustrialAdvanced
+
 - type: startingGear
   id: MobClippyGear
   equipment:
@@ -16,3 +32,12 @@
     head: ClothingHeadHatNfsdSmallCampaign
     id: CappyIDCard
     belt: ClothingBeltNfsdWebbing
+
+# Adopted from space-wizards #26265 (Thank you, PolterTzi)
+- type: startingGear
+  id: MobKoboldGear
+  equipment:
+    head: ClothingHeadHatStrawHat
+    ears: ClothingHeadsetService
+    jumpsuit: ClothingUniformJumpsuitHawaiRed
+    id: YipYipIDCard
